@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.top-section {
+    background-color: #001D37;
+    color: white;
+    padding: 150px 0px;
+    max-width: 1120px;
+    margin: 0 auto;    
+}
+
+div.top-section-wrapper {
+    background-color: #001D37;
+    padding: 0 25px;
+    overflow: hidden;
+}
+
+a.primary-btn {
+    background-color: #475AFF;
+    padding: 14px 40px;
+    color: white;
+    border-radius: 90px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+a.secondary-btn {
+    background-color: transparent;
+    border: 2px white solid;
+}
+
+a.utility-mr {
+    margin-right: 10px;
+}
+
+div.top-section h1 {
+    font-size: 80px;
+    line-height: 97%;
+}
+
+div.top-section p {
+    font-size: 20px;
+    line-height: 170%;
+    margin: 20px 0px;
+}
+
+div.btn-container {
+    margin-bottom: 120px;
+}
+
+div.widthy {
+    width: 500px;
+}
+
+.intro-feature {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.intro-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.intro-feature {
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.intro-features .intro-feature p {
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.intro-features h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.intro-features .intro-feature div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro-features .intro-feature p {
+    margin: 0;
+}
+
+.intro-feature svg {
+    margin-bottom: 15px;
+}
+
+.btn-container a:first-child {
+    border: 2px solid #475AFF;
+}
+
+
+.blurry-color svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top-section-wrapper {
+    position: relative;
+}
+
+.blurry-color2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.widthy {
+    position: relative;
+    z-index: 5;
+}
+
+.widthy * {
+    position: relative;
+    z-index: inherit;
+}
+
+.intro-features .intro-feature * {
+    position: relative;
+    z-index: 5;
+}
+
+.pet-section-area {
+    background-color: white;
+    padding: 85px 16px;
+}
+
+.pet-area-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pet-area-container h2 {
+    font-size: 55px;
+    line-height: 97%;
+}
+
+.pet-filter {
+    color: #9F9F9F;
+    font-size: 22px;
+}
+
+.pet-filter button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #9F9F9F;
+    margin-right: 10px;
+}
+
+.list-of-pets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.pet-cards {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    gap: 30px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pet-card-photo {
+    order: 1;
+    grid-row: 1;
+}
+
+.pet-card-photo img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pet-card-text h3 {
+    font-size: 26px;
+}
+
+.pet-card-text p {
+    font-size: 16px;
+    color: #626262;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.pet-card-text {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.pet-card-text p:nth-of-type(2) {
+    font-size: 14px;
+    color: #afafaf;
+}
+
+.pet-card-text p:nth-of-type(1) {
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    .intro-features {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.widthy h1 {
+        font-size: 60px;
+        width: 70%;
+    }
+
+    div.widthy p {
+        width: 70%;
+        line-height: 150%;
+    }
+
+    .list-of-pets {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.blurry-color svg {
+        height: 100%;
+    }
+
+    div.blurry-color2 svg {
+        height: 50%;
+        width: 100%;
+    }
+
+    .top-section-wrapper {
+        position: relative;
+    }
+}
+}
